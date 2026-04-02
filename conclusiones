@@ -1,0 +1,15 @@
+============================================================
+INFORME DE CONCLUSIONES
+============================================================
+
+1. HALLAZGOS EN PRUEBAS DE RENDIMIENTO (JMETER):
+- Ejercicio #1 (Login): Se identificó bloqueos de seguridad (Cloudflare Error 522/523) en APIs gratuitas.
+- Ejercicio #2 (PokeAPI): La API demostró una alta resiliencia al manejar 250 usuarios concurrentes. 
+  El sistema alcanzó un rendimiento máximo de 2,249 peticiones por minuto con un tiempo de respuesta promedio de 1.2 segundos. 
+  No se observaron cuellos de botella significativos, ya que las métricas de media y desviación se mantuvieron estables durante todo el periodo de ejecución.
+
+2. HALLAZGOS EN AUTOMATIZACIÓN:
+- La implementación del patrón Page Object Model (POM) en Selenium permitió una automatización limpia y mantenible de los formularios de DemoQA.
+- Karate DSL facilitó la validación de APIs.
+  El uso de archivos .feature facilita la lectura de los casos de prueba para perfiles no técnicos, siguiendo una metodología BDD.
+  Se pudo generar reportes luego de la ejecución de la pruebas en formato .html
